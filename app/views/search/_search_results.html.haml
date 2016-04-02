@@ -1,0 +1,34 @@
+.SearchfieldContainer
+  .well.whiteBack
+    %form.searchForm.form-inline
+      .row
+        .col-md-12
+          .form-group
+            %label.sr-only search
+            = text_field_tag :query, params[:query], placeholder: "Search", class: "form-control searchBox", autocomplete:"off"
+          .form-group
+            = submit_tag "Search", class: 'btn btn-success searchButton'
+            = link_to 'Clear', nil, class:'btn btn-danger'
+  #searchOrderTable.well.whiteBack.bookingSpace.tableClass.hide
+    %h4 Tweet's
+    %table#searchTweetDataTable.table.table-bordered
+      %thead
+        %tr
+          %th Tweet
+      %tbody
+  .loading.hide.well.whiteBack.text-center.userSpace
+    %h4 Loading Search Results ....
+  .noResults.hide.well.whiteBack.text-center.userSpace
+  #searchUserTable.well.whiteBack.hide.userSpace
+    .row.border-bot.margin10-bot
+      .col-md-4
+        %h4 Tweeter's
+    %table#searchUserPartialDataTable.table.table-bordered.display.searchUserPartialDataTable
+      %thead
+        %tr
+          %th Name
+          %th Follow
+      %tbody
+      
+  #resultsData.hide
+    = @results    

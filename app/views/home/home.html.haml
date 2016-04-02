@@ -1,0 +1,28 @@
+.col-sm-12
+  %h2 Post Tweet
+.well.whiteBack
+  .row
+    .col-md-12
+      %textarea.msgpost{:id => "js-tweet", :name => 'message', :placeholder => 'Post Tweet...', :maxlength => '142 char', style:"width:80%;" }
+
+      = submit_tag "Post Tweet", id: 'js-post-tweet', :style=>"margin-top:-35px;", :class=> 'btn btn-primary'
+  
+  .row
+    .col-md-6
+      %h4 #{@follwer_count} | #{@following_count}
+      %h4 Follwer | Following 
+
+	 
+	   
+.well.whiteBack 
+  %h2 Recent Tweet
+  .col-sm-6.text-right
+    = paginate @all_tweets
+  .table-responsive    
+    %table.table.table-bordered.table-striped.margin10-both.table-hover.showRow
+      %thead
+        %th Tweet's
+      %tbody.pointerCursor
+        - @all_tweets.each do |tweet|
+          %tr
+            %td= "#{tweet.user.first_name} - #{tweet.tweet}"         

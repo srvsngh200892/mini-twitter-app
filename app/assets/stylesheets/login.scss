@@ -1,0 +1,153 @@
+// Place all the styles related to the access controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html
+{
+  height: 100%;
+}
+body{
+  height: 100%;
+  width: 100%;
+  font-family: "sourcesanspro";
+	font-weight: normal;
+}
+h1,h2,h3,h4,h5,h6
+{
+  font-family: "sourcesanspro";
+	font-weight: bold;
+}
+p
+{
+  font-family: "sourcesanspro-light";
+  font-size: 1.1em;
+}
+
+/*-------@bhaskar: used font starts----------*/
+
+
+@font-face
+{
+  font-family: "dinPro";
+  src: font-url('dinPro-Reg.TTF');
+  font-weight: normal;
+  font-style: normal;
+}@font-face
+{
+  font-family: "sourcesanspro";
+  src: font-url('SOURCESANSPRO-REGULAR.TTF');
+  font-weight: normal;
+  font-style: normal;
+}@font-face
+{
+  font-family: "tagline";
+  src: font-url('tagline.TTF');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face
+{
+  font-family: "sourcesanspro-light";
+  src: font-url('SOURCESANSPRO-LIGHT.TTF');
+}
+@font-face
+{
+  font-family: "sourcesanspro";
+  src: font-url('SOURCESANSPRO-SEMIBOLD.TTF');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face
+{
+  font-family: "sourcesanspro-extralight";
+  src: font-url('SOURCESANSPRO-EXTRALIGHT.TTF');
+}
+
+/*---------@bhaskar:used font ends------------*/
+
+
+
+@font-face
+{
+  font-family: "sourcesanspro-black";
+  src: font-url('SOURCESANSPRO-BLACK.TTF');
+}
+@font-face
+{
+  font-family: "sourcesanspro-blackitalic";
+  src: font-url('SOURCESANSPRO-BLACKITALIC.TTF');
+}
+@font-face
+{
+  font-family: "sourcesanspro-bold";
+  src: font-url('SOURCESANSPRO-BOLD.TTF');
+}
+
+@font-face
+{
+  font-family: "sourcesanspro-extralight";
+  src: font-url('SOURCESANSPRO-EXTRALIGHTITALIC.TTF');
+}
+@font-face
+{
+  font-family: "sourcesanspro-italic";
+  src: font-url('SOURCESANSPRO-EXTRALIGHTITALIC.TTF');
+}
+@font-face
+{
+  font-family: "sourcesanspro-semibolditalic";
+  src: font-url('SOURCESANSPRO-SEMIBOLDITALIC.TTF')
+}
+
+.formContainer
+{
+  display: table;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
+.verticalCenter
+{
+  display: table-cell;
+  vertical-align: middle;
+}
+.loginForms
+{
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #111;
+  padding: 20px 30px;
+  text-align: center;
+}
+.loginForms input
+{
+  border-radius: 0px;
+  box-shadow: none;
+  border: 1px solid #aaa;
+  padding-top: 13px;
+  padding-bottom: 7px;
+  margin: 10px 0px;
+  font-size: 18px;
+  bottom: 10;
+}
+
+.loginForms input[type=submit]
+{
+  border: 1px solid #008964;
+  background-color: #00ba8b;
+}
+
+.bold
+{
+  font-weight: bolder !important;
+}
+
+.book-nowbtn:hover
+{
+  color: #333 !important;
+  border: thin solid #777;
+} 
+.book-nowbtn 
+{
+  background-color: #e82020;
+  border-radius: 0px;
+  text-decoration: none !important;
+}

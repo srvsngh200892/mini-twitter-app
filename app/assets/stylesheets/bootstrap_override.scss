@@ -1,0 +1,57 @@
+/*!
+ * Override bootstrap classes : @rohit;
+ */
+
+.carousel-indicators {
+  bottom: -10px !important;
+}
+.form-horizontal .has-feedback .form-control-feedback {
+  top: 0 !important;
+  right: 15px;
+}
+
+body {
+  color:#000 !important;
+}
+.form-group textarea {
+  margin:0px;
+}
+.form-control-feedback {
+  top: 0px !important;
+}
+#searchForm .form-control-feedback {
+  top: 5px !important;
+}
+.form-inline input {
+   margin:5px 3px;
+}
+.panel-default>.panel-heading,.panel-default>.panel-body{
+background-color: #FFF !important;
+border-bottom: thin solid #DDDDDD;
+box-shadow: 0 1px 1px rgba(0,0,0,.05)
+}
+.leftTextAlign{
+  text-align: left !important;
+}
+.form-horizontal .form-group {
+  margin-bottom: 10px;
+}
+.well {
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.panel-group {
+  margin-bottom: 10px;
+}
+#BookingModal .modal-dialog{
+  margin: 70px auto;
+}
+#BookingModal .mobile-modal-dialog{
+  margin: 0px auto;
+}
+
+@media (max-width:768px){
+#BookingModal .modal-dialog{
+  margin: 0px auto; 
+} 
+}

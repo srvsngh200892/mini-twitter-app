@@ -1,0 +1,284 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ */
+@import 'font-awesome';
+@import 'multi-select';
+@import 'includes/*';
+@import 'bootstrap_override';
+@import 'global';
+@import 'login';
+
+
+//= require s3_direct_upload_progress_bars
+
+.maxvalFix{
+  padding: 7px 0;
+}
+.dropdowm-menu li a 
+{
+background-color: #44A !important;
+}
+.search-dropdown
+{
+  height: auto;  
+}
+.v-scroll-hide
+{
+  overflow:hidden;
+  height: auto;
+}
+@-moz-document url-prefix() { 
+ .align-fix
+{
+  margin-top: -15px !important;
+}
+}
+
+/*.scroller
+{
+  position: absolute;
+  height: 300px;
+  width: 12px;
+  background-color: rgba(0,0,0,0.3);
+  margin-left: 385px;
+  border-radius: 5px;
+  z-index: 2000;
+}
+.more
+{
+  position: absolute;
+  width: 100%;
+  height:25px;
+  color: #e82020;
+  padding-left: 20px ;
+  font-weight: bold;
+  cursor: pointer;
+  border: thin solid #e1e1e1;
+  background-color: #FFF;
+  margin-top: 100px;
+  z-index: 1100;
+}
+.scroller .hand
+{
+  border-radius: 5px;
+  cursor: pointer;
+  width: 10px;
+  border:thin solid #555;
+  height: 50%;
+  background-color: rgba(0,0,0,0.6);
+}
+*/
+.width300{
+  width: 400px !important;
+}
+.searchbar input {
+  outline: none;
+  border:1px solid #ccc;
+}
+
+.success-absolute
+{
+  text-align:center;
+  margin-bottom:0px !important;
+  z-index: 999;
+  color: #e82020 !important;
+  background-color: #FFF  !important;
+}
+.padding0
+{
+  padding: 0px !important;
+}
+.nobg
+{
+  background-color:none !important;
+}
+.sharp-border
+{
+  border-radius: 0px !important;
+}
+.header-phone-number
+{
+  color: #3A9129 !important;
+}
+.padding10
+{
+  padding: 10px 0px;
+}
+.call-color
+{
+  color:#1FB254;
+}
+.hotel-title-modal{
+  font-size: 18px !important;
+}
+
+.input-error{
+  border: 1px solid RED !important;
+  box-shadow: 0px 0px 8px #F00;
+}
+
+.numbersList
+{
+  width: 100%;
+}
+.timeList
+{
+  overflow-y: auto;
+  overflow-x:hidden;
+  max-height: 200px !important;
+}
+.timeSlots
+{
+  overflow-y: auto;
+  overflow-x:hidden;
+  max-height: 200px !important;
+}
+.thankYou
+{
+  margin-top: 70px !important;
+  text-align: center;
+  background-color: #DDD;
+  color: #333;
+  font-weight: normal;
+  font-family: "sourcesanspro-extralight";
+  font-size: 56px;
+  padding: 30px 0px 10px 0px;
+}
+.secLine
+{
+  font-size: 28px;
+
+}
+.getBackSoon
+{
+  text-align: center;
+  border:thin solid #DDD;
+  background-color: #FFF;
+  color: #333;
+  font-weight: normal;
+  font-family: "sourcesanspro-extralight";
+  font-size: 36px;
+  padding: 20px 0px !important;
+}
+.props
+{
+  width: 100%;
+  margin: 20px 0px !important;
+  background-color: #EEE !important;
+	padding-top: 20px;
+}
+.props ul
+{
+  margin: 0;
+  background-color: #EEE;
+  padding: 0;
+  width: 100% !important;
+}
+.props ul li .hotel-name .book-nowbtn
+{
+  color: #FFF;
+  font-weight: bold;
+  padding: 8px !important;
+
+}
+.hotel-name a
+{
+  color: #FFF !important;
+  font-weight: bold;
+}
+.props ul li .hotel-name:hover
+{
+  background:rgba(0,0,0,0.9); /* Chrome10+,Safari5.1+ */ 
+  font-weight: bold ;
+
+}
+
+.props ul li .hotel-name
+{
+  color:#FFF;
+  cursor: pointer;
+  background:rgba(0,0,0,0.7); /* Chrome10+,Safari5.1+ */ 
+  position: absolute;
+  font-size: 14px;
+  font-family: sourcesanspro;
+  font-weight: normal;
+  text-align: left;
+  margin-top: -35px !important;
+  padding: 8px 10px;
+  width: 100%;
+  z-index: 20;
+}
+
+.props ul li a
+{
+  padding: 0px !important;
+}
+.props ul li .displayImg
+{
+  width: 100%;
+}
+.hotel-name a
+{
+  color: #FFF;
+  font-weight: normal;
+}
+.hotel-name a:hover
+{
+  font-weight: bold;
+  color: #FFF !important;
+
+}
+.hotel-name
+{
+  color: #FFF;
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  font-size: 16px;
+  margin: 0px !important;
+  text-align: left;
+  margin-top: -64px !important;
+  padding: 8px 0px;
+  width: 100%;
+  z-index: 20;
+}
+
+.map-marker-hide-underlay
+{
+  height: 100%;
+}
+.enq_btn_align
+{
+  margin: 10px 0px;
+}
+.input-error
+{
+  border: thin solid #f00 !important;
+}
+.thankYou hr
+{
+  width: 50%;
+  border-top: thin solid #333;
+  margin-top: 0px !important;
+}
+
+.noRightPadding{
+padding-right: 15px;
+padding-left: 0px;
+}
+g{
+cursor: pointer;
+}
+
+.disable_pointer_events{
+  pointer-events: none;
+}
+
+

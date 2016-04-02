@@ -1,0 +1,131 @@
+//colors
+$white: #fff;
+$color_jacarta_approx: #336;
+$color_alto_approx: #ddd;
+$black: #000;
+$color_cream_approx: #ffc;
+$color_bay_of_many_approx: #339;
+$color_mountain_mist_approx: #999;
+$color_celeste_approx: #ccc;
+
+//fonts
+$font_0: arial;
+$font_1: verdana;
+$font_2: helvetica;
+$font_3: sans-serif;
+
+//@extend-elements
+//original selectors
+//#CalendarControl .weekday, #CalendarControl .weekend, #CalendarControl .current
+%extend_1 {
+  display: block;
+  text-decoration: none;
+  border: 1px solid $white;
+  width: 2em;
+}
+
+//original selectors
+//#CalendarControl .weekday:hover, #CalendarControl .weekend:hover, #CalendarControl .current:hover
+%extend_2 {
+  color: $white;
+  background-color: $color_jacarta_approx;
+  border: 1px solid $color_mountain_mist_approx;
+}
+
+//original selectors
+//#CalendarControl .previous a, #CalendarControl .next a
+%extend_3 {
+  color: $white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+#CalendarControlIFrame {
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: 150px;
+  width: 150px;
+  z-index: 99;
+}
+#CalendarControl {
+  position: absolute;
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+  display: none;
+  z-index: 100;
+  height: 150px;
+  width: 150px;
+  table {
+    font-family: $font_0, $font_1, $font_2, $font_3;
+    font-size: 8pt;
+    border-left: 1px solid $color_jacarta_approx;
+    border-right: 1px solid $color_jacarta_approx;
+  }
+  th {
+    font-weight: normal;
+    a {
+      font-weight: normal;
+      text-decoration: none;
+      color: $white;
+      padding: 1px;
+    }
+  }
+  td {
+    text-align: center;
+  }
+  .header {
+  }
+  .weekday {
+    background-color: $color_alto_approx;
+    color: $black;
+    @extend %extend_1;
+    &:hover {
+      @extend %extend_2;
+    }
+  }
+  .weekend {
+    background-color: $color_cream_approx;
+    color: $black;
+    @extend %extend_1;
+    &:hover {
+      @extend %extend_2;
+    }
+  }
+  .current {
+    border: 1px solid $color_bay_of_many_approx;
+    color: $white;
+    @extend %extend_1;
+    &:hover {
+      @extend %extend_2;
+    }
+  }
+  .previous {
+    text-align: left;
+    padding: 1px 3px;
+    font-size: 1.4em;
+    a {
+      @extend %extend_3;
+    }
+  }
+  .next {
+    text-align: right;
+    padding: 1px 3px;
+    font-size: 1.4em;
+    a {
+      @extend %extend_3;
+    }
+  }
+  .title {
+    text-align: center;
+    font-weight: bold;
+    color: $white;
+  }
+  .empty {
+    background-color: $color_celeste_approx;
+    border: 1px solid $white;
+  }
+}

@@ -1,0 +1,16 @@
+<div class="formContainer">
+  <div class ="verticalCenter">
+    <div class="col-xs-12 col-sm-offset-4 col-sm-4 loginForms">
+      <h2>Change your password</h2>
+      <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
+        <%= devise_error_messages! %>
+        <%= f.hidden_field :reset_password_token %>
+        <%= f.password_field :password, autofocus: true, autocomplete: "off", placeholder: "New Password" ,class: "col-lg-12" %>
+        <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation" ,class: "col-lg-12"  %>
+        <%= f.submit "Change my password" , class: "col-lg-12" %>
+      <% end %>
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>
+
